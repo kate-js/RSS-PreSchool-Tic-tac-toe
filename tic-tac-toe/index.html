@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Tic-tac-toe</title>
+</head>
+<body class="wrapper">
+  <header class="header">
+    <img src="css/assets/img/logo.png" width="50" alt="">
+    <h1 class="header__title">tic-tac-toe</h1>
+    <img src="css/assets/img/audio.svg" width="50" class="audio-img" alt="">
+  </header>
+  <main class="main">
+    <section class='main__audio'>
+      <audio class="main__audio-win"></audio>
+      <audio class="main__audio-step"></audio>
+    </section>
+    <section class="main__results result">
+      <table>
+          <caption class="result__cap">Таблица результатов</caption>
+          <thead>
+            <tr class="result__title">
+              <th></th>
+              <th>X</th>
+              <th>Tie</th>
+              <th>0</th>
+            </tr>
+          </thead>
+          <tbody class="result__value"></tbody>
+      </table>
+      <button class="result__button">Сбросить</button>
+    </section>
+    <section class="main__play">
+      <div class="play__area">
+        <div class="play__box"></div>
+        <div class="play__box"></div>
+        <div class="play__box"></div>
+        <div class="play__box"></div>
+        <div class="play__box"></div>
+        <div class="play__box"></div>
+        <div class="play__box"></div>
+        <div class="play__box"></div>
+        <div class="play__box"></div>
+      </div>
+    </section>
+    <section class="modal">
+      <div class="modal__overlay"></div>
+      <div class="modal__window">
+        <div class="modal__content">content</div>
+        <div class="modal__closer">
+          <p>Start new game</p>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="footer">
+    <div class="footer__info">
+      <span>@</span>
+      <span>2022</span>
+      <a href="https://github.com/kate-js" class='footer__link'>github</a>
+    </div>
+    <a href="https://rs.school/js-stage0/" class='footer__link'>
+        <img src="./css/assets/img/RSS-logo.svg" alt="logo RRSchool" class="footer__logo">
+    </a> 
+  </footer>
+  <script src="js/index.js"></script>
+</body>
+</html>
